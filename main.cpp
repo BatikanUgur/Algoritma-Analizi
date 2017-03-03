@@ -16,7 +16,7 @@ else{
 }
 int main()
 {
-    long summary=pow(3,40);
+    long summary=pow(6,20);
 
     cout << "summary= " << summary<< endl;
     return 0;
