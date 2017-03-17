@@ -1,0 +1,48 @@
+package com.company;
+
+import java.util.Arrays;
+
+/**
+ * Created by BM on 17.03.2017.
+ */
+public class odev4 {
+    private int kap = 5;
+    private int[] dizi = new int[capacity];
+    private int boyut = 0;
+
+
+    public void add(int number) {
+
+        if (kap > boyut) {
+            dizi[boyut] = number;
+
+        } else {
+
+            int[] temp = Arrays.copyOf(dizi, boyut);
+            kap *= 2;
+            dizi = new int[kap];
+            for (int i =0; i < size;
+                 i++) {
+                dizi[i] = temp[i];
+            }
+
+            dizi[boyut] = number;
+        }
+        size++;
+    }
+    
+    public static void main(String[] args) {
+        // write your code here
+        odev4 myArrayList = new odev4();
+
+
+        odev4 myArrayList2;
+        for (int i = 5; i <100 ; i++) {
+            myArrayList.add(i);
+        }
+
+        //Shallow
+        //O(1)
+        myArrayList2 = myArrayList;
+    }
+}
