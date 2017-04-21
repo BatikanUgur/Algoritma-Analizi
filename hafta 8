@@ -1,0 +1,22 @@
+ public static void main(String[] args) {
+        
+        int [ ] x= new int [3] ;
+        x[0]=1;
+        x[1]=2;
+        x[2]=3;
+        int [ ] y= new int [3] ;
+        y[0]=2;
+        y[1]=4;
+        y[2]=6;
+        int sum =0;
+        
+        for(int i=0;i<3;i++){
+            
+            int k=x[i]*y[i];
+            sum=sum+k;
+            
+        }
+        System.out.println(sum);
+        
+        // TODO code application logic here
+    }
